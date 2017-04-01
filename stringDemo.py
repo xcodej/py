@@ -1,0 +1,7 @@
+print(ord('A'))
+print(ord('中'))
+print(chr(66))
+print(chr(25991))
+print(len('abc'))
+print(len('中'))
+print('Hello, %s' % 'world')
