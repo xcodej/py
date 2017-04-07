@@ -26,3 +26,7 @@ for index, value in enumerate(aList):
 
 for one, two, three in [(11, 22, 33), (21, 22, 23)]:
 	print(one, two, three)
+
+
+from collections import Iterator
+print(isinstance([], Iterator))
