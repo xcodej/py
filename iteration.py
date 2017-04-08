@@ -30,3 +30,10 @@ for one, two, three in [(11, 22, 33), (21, 22, 23)]:
 
 from collections import Iterator
 print(isinstance([], Iterator))
+
+it = iter([1, 2, 3, 4, 5])
+while True:
+	try:
+		x = next(it)
+	except StopIteration:
+		break;
