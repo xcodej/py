@@ -11,3 +11,5 @@ def lazy_sum(*args):
             ax = ax + n
         return ax
     return sum
+
+
