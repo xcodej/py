@@ -7,3 +7,7 @@ finally:
 
 with open('text','r') as f:
 	print(f.read())
+
+
+for line in f.readlines():
+    print(line.strip()) # 把末尾的'\n'删掉
