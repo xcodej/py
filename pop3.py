@@ -19,3 +19,9 @@ resp, lines, octets = server.retr(index)
 msg_content = b'\r\n'.join(lines).decode('utf-8')
 msg = Parser().parsestr(msg_content)
 server.quit()
+
+
+from email.parser import Parser
+from email.header import decode_header
+from email.utils import parseaddr
+msg = Parser().parsestr(msg_content)
