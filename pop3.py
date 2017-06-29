@@ -55,3 +55,9 @@ def print_info(msg, indent=0):
             print('%sText: %s' % ('  ' * indent, content + '...'))
         else:
             print('%sAttachment: %s' % ('  ' * indent, content_type))
+
+def decode_str(s):
+    value, charset = decode_header(s)[0]
+    if charset:
+        value = value.decode(charset)
+    return value
