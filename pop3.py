@@ -62,7 +62,3 @@ def decode_str(s):
         value = value.decode(charset)
     return value
 
-
-
-
-
