@@ -61,4 +61,11 @@ def decode_str(s):
     if charset:
         value = value.decode(charset)
     return value
-
+def guess_charset(msg):
+    charset = msg.get_charset()
+    if charset is None:
+        content_type = msg.get('Content-Type', '').lower()
+        pos = content_type.find('charset=')
+        if pos >= 0:
+            charset = content_type[pos + 8:].strip()
+    return charset
