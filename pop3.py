@@ -69,3 +69,8 @@ def guess_charset(msg):
         if pos >= 0:
             charset = content_type[pos + 8:].strip()
     return charset
+
+
+
+
+
